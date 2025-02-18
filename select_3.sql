@@ -111,7 +111,7 @@ ORDER BY total_amount DESC;
 
 
 
-----
+---- INNER JOIN ---
 SELECT * FROM payment2 p
 JOIN customer c
 ON p.customer_id = c.customer_id;
@@ -130,12 +130,14 @@ ON p.customer_id = c.customer_id;
 SELECT * FROM payment2 p
 RIGHT JOIN customer c
 ON p.customer_id = c.customer_id;
-
+---- INNER JOIN ---
 
 SELECT * FROM payment2 ;
 SELECT * FROM customer;
 
 
 
-
+SELECT customer_id, SUM(amount) FROM payment
+GROUP BY customer_id
+HAVING customer_id = 341;
 
