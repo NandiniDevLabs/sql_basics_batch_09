@@ -69,8 +69,6 @@ ON c.customer_id = p.customer_id;
 
 
 
-
-
 -- ASSIGNMENT: Update customer_id = NULL for payment_id 14519 in payment3
 select * FROM payment3;
 
