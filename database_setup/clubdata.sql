@@ -2,7 +2,8 @@
 -- PostgreSQL database dump
 --
 CREATE DATABASE exercises;
-\c exercises
+-- \c exercises
+-- IMP: Switch to exercises Database in PG Admin Tool and run the below script
 CREATE SCHEMA cd;
 
 
